@@ -1,0 +1,19 @@
+ <h2> Offer Loan</h2>
+    <form action="/my-account" >
+    <input id='user_id' name='user_id' type='hidden' value='<%= @user.id() %>'>
+      <div class="form-inline">
+         <label for="person">Name:</label>
+         <input id="person" name="person" class="form-control" type="text">
+      </div>
+      <br >
+      <div class="form-inline">
+         <label for="amnt">Amount:</label>
+         <input id="amnt" name="amnt" class="form-control" type="number">
+      </div>
+      <br >
+      <div class="form-inline">
+         <label for="months">Month to pay:</label>
+         <input id="months" name="months" class="form-control" type="number">
+      </div>
+      <button type="submit" class="btn-success">Send</button>
+    </form>

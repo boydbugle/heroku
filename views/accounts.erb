@@ -1,0 +1,12 @@
+<h1>All Loans</h1>
+
+  <p>Here are all your loans both requested and offered:</p>
+
+  <ul>
+    <% @user.loans().each() do |loan| %>
+      <li><a href="/my-account/<%= loan.id() %>"><%= loan.name() %> received a loan of  <%= loan.amount() %> due pay in<%= loan.month() %> months</a></li>
+    <% end %>
+  </ul>
+
+  <p><a href="/users/<%= @user.id()%>" >Return to user</a></p>
+  <p><a href="/" >Home</a></p>

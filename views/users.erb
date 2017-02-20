@@ -1,0 +1,9 @@
+<h1>All users</h1>
+    <h3>select a user account</h3>
+  <ul>
+    <% @users.each() do |user| %>
+      <li><a href="/users/<%= user.id() %>"><%= user.name() %></a></li>
+    <% end %>
+  </ul>
+
+  <p><a href="/" >Home</a></p>
